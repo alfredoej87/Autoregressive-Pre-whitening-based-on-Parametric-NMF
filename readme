@@ -7,7 +7,8 @@ In this case the solution can be further improved from using an iterative refine
 %%(b) In some scenarios (i.e., noise types) of some non-parametric pitch estimators (e.g., SWIPE') 
 
 %%In non-stationary noise (e.g., babble or restaurant) a better performance (noise whiteness, best pitch estimation accuracy) is obtained from 
-%%training a codebook of 256 entries. 
+%%training a noise codebook of 256 entries. We observed better performance from a speech codebook of 32 entries 
+%%In stationary noise (e.g., F-16, factory), a noise codebook of 16 entries. 
 
 %%Requires: voicebox  http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html
 %%Uses voicebox functions: enframe and overlapadd
