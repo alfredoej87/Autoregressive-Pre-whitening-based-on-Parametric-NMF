@@ -37,11 +37,13 @@ if nargin<4
 end
 
 if nargin<3
+    segmentTime = 0.032; 
     shiftTime = segmentTime/2; %%default 50% overlap between segments
 end 
 
 if nargin<2 
     segmentTime = 0.032; %%default 32ms 
+    shiftTime = segmentTime/2;
 end 
 
 if nargin<1
