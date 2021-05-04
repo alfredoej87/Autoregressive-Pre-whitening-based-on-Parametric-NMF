@@ -10,8 +10,8 @@ In this case the solution can be post-processed and improved from an iterative r
 %%training a noise codebook of 256 entries. We observed better performance from a speech codebook of 32 entries 
 %%In stationary noise (e.g., F-16, factory), a noise codebook of 16 entries. 
 
-%%Requires: voicebox  http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html
-%%Uses voicebox functions: enframe and overlapadd
+%%Requires: voicebox  http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html, Uses voicebox functions: enframe and overlapadd
+%%Although the required files are readily uploaded 
 
 %%Example from using the default setting parameters.  
 
