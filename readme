@@ -1,0 +1,13 @@
+%%Pre-whitening a noisy signal
+%%input signal is assumed as signal = cleanSignal+noise 
+
+%%Requires: voicebox  http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html
+%%Uses voicebox functions: enframe and overlapadd
+
+%%Example from using the default setting parameters.  
+
+%y = audioread('keele2addedbabbleat5dB.wav'); 
+%noisy_nmf_prewhitened = arPrewhitenNoisySignal(y); 
+%%for some noise scenarios it is suggested to do training on similar noise
+%%types, 
+%%it is also recommended to input the parameters for a specific application
