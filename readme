@@ -4,19 +4,17 @@
 %%This pre-whitener is useful as a pre-processor for: 
 %%(a) WGN based estimator, such as the Fast NLS pitch estimator (https://github.com/jkjaer/fastF0Nls). 
 In this case the solution can be post-processed and improved from an iterative refinement (https://github.com/alfredoesquivelaudioaau/iterativeF0Ar_NLS) 
-%%(b) In some scenarios (i.e., noise types at certain iSNRs) of some non-parametric pitch estimators (e.g., SWIPE') 
+%%(b) In some scenarios (i.e., noise types at certain iSNRs) of some non-parametric pitch estimators (e.g., SWIPE'), instead of applying speech enhancement as a pre-processor
 
 %%In non-stationary noise (e.g., babble or restaurant) a better performance (noise whiteness, best pitch estimation accuracy) is obtained from 
 %%training a noise codebook of 256 entries. We observed better performance from a speech codebook of 32 entries 
 %%In stationary noise (e.g., F-16, factory), a noise codebook of 16 entries. 
 
-%%Requires: voicebox  http://www.ee.ic.ac.uk/hp/staff/dmb/voicebox/voicebox.html, Uses voicebox functions: enframe and overlapadd
-%%Although the required files are readily uploaded 
+%%Requires: voicebox functions: enframe and overlapadd, which are readily uploaded 
 
 %%Example from using the default setting parameters.  
 
 %y = audioread('keele2addedbabbleat5dB.wav'); 
 %noisy_nmf_prewhitened = arPrewhitenNoisySignal(y); 
-%%for some noise scenarios it is suggested to do training on similar noise
-%%types, 
+%%for some noise scenarios it is suggested to do training on similar noise types, 
 %%it is also recommended to input the parameters for a specific application
