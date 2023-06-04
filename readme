@@ -18,4 +18,5 @@ convenient way to deal with noise (speech enhancement)
 %%for some noise scenarios it is suggested to do training on similar noise types, it is also recommended to input the parameters for a specific application
 
 At very low SNRs in very non-stationary noise (e.g., babble or restaurant), pre-whitening followed by NLS pitch estimates leads to the best performance in terms of FFE (including gross errors and
-voicing detections) as compared to a joint estimator (in case one is interested in better accuracy). Although such result was not reported yet in a paper, I hope I can update such results in this repo.
+voicing detections) as compared to a joint estimator (in case one is interested in better accuracy) (the difference is around 4%, I think). Although such result was not reported yet in a paper, 
+I hope I can update such results in this repo.
