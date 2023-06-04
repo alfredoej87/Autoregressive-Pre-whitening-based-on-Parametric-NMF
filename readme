@@ -16,3 +16,6 @@ convenient way to deal with noise (speech enhancement)
 %y = audioread('keele2addedbabbleat5dB.wav'); 
 %noisy_nmf_prewhitened = arPrewhitenNoisySignal(y); 
 %%for some noise scenarios it is suggested to do training on similar noise types, it is also recommended to input the parameters for a specific application
+
+At very low SNRs in very non-stationary noise (e.g., babble or restaurant), pre-whitening followed by NLS pitch estimates leads to the best performance in terms of FFE (including gross errors and
+voicing detections) even as compared to a joint estimator (in case one interested in better accuracy). Although such result was not reported yet, I hope I can update such results in this page. 
